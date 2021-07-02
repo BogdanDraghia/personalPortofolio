@@ -1,6 +1,6 @@
 
 import stylenav from "../../styles/Layout/Navbar.module.scss"
-
+import Image from 'next/image'
 import React, { useState, useEffect } from "react"
 import LogoName from "../../public/assets/Brand/logo+name-Big-Blue.png"
 import Moon from "../../public/assets/svg/moon2.svg"
@@ -122,10 +122,9 @@ const Navbar = () => {
                     variants={variants}
                     className="circlechange"
                   >
-                    {/* <Moon
+                     <Image                       style={{ height: "20px", rotate: "40deg" }}src="../../public/assets/svg/moon2.svg" alt="moon"/>
                       fill="white"
-                      style={{ height: "20px", rotate: "40deg" }}
-                    /> */}
+
                   </motion.div>
                 </div>
               </li>
