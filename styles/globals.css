@@ -1,16 +1,64 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+:root {
+  --SiteBackground: #ffffff;
 
+  --Accent: #6aa7e8;
+
+  --bg-white: #ffff;
+
+
+  --bg-dark: #24292f;
+  --moon-color1: #f6be37;
+  --moon-color2: #ffff;
+  --TxtColorGrey: #646f79;
+  --boxshadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  --FontS: 16px;
+  --FontM: 18px;
+  --FontL: 24px;
+}
+.darkmode {
+  --SiteBackground: var(--bg-dark);
+  --moon-color: #f7ec87;
+}
+.lightmode {
+  --SiteBackground: var(--bg-white);
+  --moon-color: #ffff;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+
+.button1 {
+  margin: 50px 0px;
+  padding: 10px 20px;
+  background-color: var(--Accent);
+  font-size: 16px;
+  width: 150px;
+  text-align: center;
+  color: white;
+  border-width: 0px;
+  border: none;
+
+  border-radius: 10px;
 }
+.button2 {
+  color: var(--Accent);
+}
+
+.centerSection {
+  margin: 0 auto;
+  max-width: calc(100% - 5em);
+  width: 70em;
+}
+
+.displayflex {
+  display: flex;
+}
+

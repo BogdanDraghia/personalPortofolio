@@ -1,0 +1,275 @@
+.logo {
+    color: var(--Accent);
+    max-width: 100px;
+  }
+  .logo > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .menu {
+    transition: all 300ms linear 0s;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    height: 50px;
+    position: relative;
+  }
+  .menu > ul {
+    flex-direction: row;
+  
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .navbardefault {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .menu > ul > li > a {
+    margin: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  
+  //hamburger
+  .hamburger {
+    padding: 3px;
+    display: none;
+  }
+  .line {
+    display: block;
+    width: 25px;
+    background-color: var(--Accent);
+    height: 5px;
+    margin-top: 3px;
+    border-radius: 2px;
+    transition: transform 300ms linear 0s;
+  }
+  .animateline1 {
+    transform: translate(0, 8px) rotate(45deg);
+  }
+  .animateline3 {
+    transform: translate(0, -8px) rotate(-45deg);
+  }
+  .animateline2 {
+    opacity: 0;
+    transition: opacity 100ms linear 0s;
+  }
+  .hidden {
+    background-color: red;
+  }
+  .shown {
+    background-color: blue;
+  }
+  .transitionsmooth {
+    transition: all 300ms linear 0s;
+  }
+  .topabsolute {
+    display: flex;
+  
+    flex-direction: row;
+    color: var(--TxtColorGrey);
+  }
+  .topabsolute > ul > li {
+    margin: 0px 10px;
+  }
+  .topabsolute > ul > li > a {
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .testcss{
+    background-color: red;
+  }
+  .topabsolute > ul > li > a:hover {
+    background-color: #f2f2f2;
+  }
+  .Groupicon {
+    position: relative;
+    margin: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  ///DROPDOWN
+  .hasdropdown {
+    position: relative;
+  }
+  .dropdown {
+    z-index: 2;
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+  }
+  .dropdown > li > a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+  
+    height: 100%;
+  }
+  .dropdown > li:hover {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  .test {
+    display: flex;
+  }
+  .linedropdown {
+    height: 10px;
+    background-color: var(--Accent);
+    width: 10px;
+  }
+  .dropdownicon-inline {
+    display: inline-flex;
+    flex-direction: row;
+  
+    align-items: center;
+  }
+  .testgroup {
+    display: flex;
+    position: absolute;
+    right: 10px;
+  }
+  .dp-item {
+    width: 15px;
+    transition: transform 200ms linear 0s;
+    height: 3px;
+    background-color: var(--Accent);
+    display: block;
+  }
+  .dp-animation1 {
+    border-radius: 10px;
+    transform: scaleX(0.7) translate(5px, 0px) rotate(0);
+  }
+  .dp-animation2 {
+    border-radius: 10px;
+    transform: scaleX(0.7) translate(-5px, 0px) rotate(0);
+  }
+  .dp-animation1-after {
+    border-radius: 10px;
+    transform: translate(3px, 0px) rotate(44deg);
+  }
+  .dp-animation2-after {
+    border-radius: 10px;
+    transform: translate(-3px, 0px) rotate(-44deg);
+  }
+  .changeandhamburger {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbardefault {
+    align-self: flex-end;
+  }
+  .changetheme {
+    width: 45px;
+    height: 22px;
+    border-radius: 24px;
+    border: 3px solid #f2f2f2;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+  }
+  .circlechange {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    left: -4px;
+    border-radius: 50%;
+    background-color: var(--Accent);
+    transition: transform 0.3s cubic-bezier(0.4, 0.03, 0, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .smallmenulinks {
+    display: none;
+  }
+  .circlechange > svg {
+    fill: var(--moon-color);
+  }
+  ///TEMPORARY????????
+  @media (max-width: 768px) {
+    .smallmenulinks {
+      align-items: center;
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+      align-self: flex-end;
+      margin: 0 auto;
+    }
+    .Groupicon {
+      margin: 0px;
+    }
+    .dropdown {
+      position: relative;
+      top: 0px;
+      z-index: 2;
+      margin-left: 30px;
+      width: 80%;
+      background-color: inherit;
+    }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbardefault {
+      display: none;
+      justify-content: inherit;
+      align-items: inherit;
+    }
+    .displayflexNav {
+      display: flex;
+      flex-direction: column;
+  
+      font-size: 20px;
+      position: absolute;
+  
+      width: 100%;
+  
+      top: 0px;
+      right: 0px;
+    }
+    //comment
+    .displayflexNav > li {
+      padding: 20px 10px;
+    }
+    .svgmoon > * {
+      width: 20px;
+    }
+    .topabsolute {
+      z-index: 4;
+      top: 60px;
+      transition: all 300ms linear 0s;
+      position: absolute;
+    }
+    .try {
+      height: 100vh;
+      width: 100%;
+      background-color: white;
+    }
+    .try2 {
+      height: 0px;
+    }
+  
+    .displaynoneNav {
+      height: 0px;
+      display: none;
+    }
+  }
+  
